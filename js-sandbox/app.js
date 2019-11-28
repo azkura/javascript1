@@ -1,51 +1,39 @@
-// var, let, const
+// DATA TYPE
 
-// var name = 'john Doe';
-// console.log(name);
-// name = 'zack';
-// console.log(name);
+//  1- PRIMITIVE-TYPES
 
-// var greeting;
-// console.log(greeting);
-// greeting = 'manga amiga';
-// console.log(greeting);
+// String
+const name = 'zizou';
+console.log(typeof name);
+// Number
+const age = 37;
+console.log(typeof age);
+// Boolean
+const hasKids = true;
+console.log(typeof hasKids);
+// Null
+const car = null;
+console.log(typeof car);
+// Undefined
+let test;
+console.log(typeof test);
+// Symbol
+const sym = Symbol();
+console.log(typeof sym);
 
-// // variables inclued : letters, numbers, _, $
-// // CAN NOT START WITH NUMBERS!
+//  1- REFERENCE TYPES - Objects
 
-// // Multi word vars
-// var firstName = 'haz' // Camel case
-// var first_name = 'haz' // Underscore (php...)
-// var FirstName = 'haz' // Pascal case (c#...) or classes
-// var firstname // not recommanded
+// Array
+const hobbies = ['moovie', 'fitness'];
+console.log(typeof hobbies);
 
-// Let
-// let name;
-// name = 'john Doe';
-// console.log(name);
-// name = 'zack';
-// console.log(name);
-
-//CONST
-//we have to assign a value!
-
-// const name = 'john Doe';
-// console.log(name);
-
-// we can't reassign!
-// name = 'zack';
-// console.log(name);
-
-const person = {
-  name: 'aziz',
-  age: 37
+// object literal
+const adresse = {
+  city: 'Paris',
+  countrie: 'France'
 };
-person.name = 'zizou';
-person.age = 36;
+console.log(typeof adresse);
 
-console.log(person);
-
-const numbers = [1, 2, 3, 4, 5];
-numbers[0] = 7;
-numbers.push(9);
-console.log(numbers);
+const today = new Date();
+console.log(today);
+console.log(typeof today);
