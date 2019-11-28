@@ -1,15 +1,11 @@
-const color = (document.querySelector('h1').style.color = 'blue');
+// var, let, const
 
-console.log(color);
-console.table({ a: 1, b: 2 });
-console.error('this is an error!');
-console.warn('this is a warning');
-console.clear();
+var name = 'john Doe';
+console.log(name);
+name = 'zack';
+console.log(name);
 
-console.time('hello');
-console.log(color);
-console.log(color);
-console.log(color);
-console.log(color);
-console.log(color);
-console.timeEnd('hello');
+var greeting;
+console.log(greeting);
+greeting = 'manga amiga';
+console.log(greeting);
