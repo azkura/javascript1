@@ -1,37 +1,52 @@
-const person = {
-  firstName: 'john',
-  lastName: 'doe',
-  age: 30,
-  adresse: {
-    city: 'miami',
-    state: 'FL'
-  },
-  hobbies: ['sports', 'moovies'],
-  getBithday: function() {
-    return 2017 - this.age;
-  }
-};
+const id = '100';
 
-let val;
-val = person.adresse.city;
-val = person.hobbies[0];
-val = person.getBithday();
-
-console.log(val);
-
-const people = [
-  { name: 'zid', age: 16 },
-  { name: 'red', age: 19 },
-  { name: 'miki', age: 20 }
-];
-
-for (let i = 0; i < people.length; i++) {
-  console.log(people[i].name);
+if (typeof id === 'undefined') {
+  console.log('correct');
+} else {
+  console.log(`id: ${id}`);
 }
 
-const journee = new Date();
-let today = journee;
-today = journee.getDay();
-today = journee.getMonth();
-today = journee.getDate();
-console.log(today);
+const name = 'steve';
+const age = 66;
+
+if (age <= 8) {
+  console.log(`${name} is a child`);
+} else if (age > 8 && age <= 18) {
+  console.log(`${name} is a teenager`);
+} else {
+  console.log(`${name} is adult`);
+}
+
+if (age < 16 || age > 65) {
+  console.log(`${name} can not be registrated`);
+} else {
+  console.log('please registrated');
+}
+
+let day;
+
+switch (new Date().getDay()) {
+  case 0:
+    day = 'Sunday';
+    break;
+  case 1:
+    day = 'Monday';
+    break;
+  case 2:
+    day = 'Tuesday';
+    break;
+  case 3:
+    day = 'Wednesday';
+    break;
+  case 4:
+    day = 'Thursday';
+    break;
+  case 5:
+    day = 'Friday';
+    break;
+  case 6:
+    day = 'Saturday';
+    break;
+}
+
+console.log(`you run on ${day}`);
