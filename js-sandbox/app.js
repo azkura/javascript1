@@ -25,6 +25,6 @@ const users = [
   { id: 4, name: 'ra' }
 ];
 
-for (let x in users) {
-  console.log(`${x} : ${users[x].name}`);
-}
+// for (let x in users) {
+//   console.log(`${x} : ${users[x].name}`);
+// }
