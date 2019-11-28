@@ -1,39 +1,37 @@
-// DATA TYPE
-
-//  1- PRIMITIVE-TYPES
-
-// String
-const name = 'zizou';
-console.log(typeof name);
-// Number
-const age = 37;
-console.log(typeof age);
-// Boolean
-const hasKids = true;
-console.log(typeof hasKids);
-// Null
-const car = null;
-console.log(typeof car);
-// Undefined
-let test;
-console.log(typeof test);
-// Symbol
-const sym = Symbol();
-console.log(typeof sym);
-
-//  1- REFERENCE TYPES - Objects
-
-// Array
-const hobbies = ['moovie', 'fitness'];
-console.log(typeof hobbies);
-
-// object literal
-const adresse = {
-  city: 'Paris',
-  countrie: 'France'
+const person = {
+  firstName: 'john',
+  lastName: 'doe',
+  age: 30,
+  adresse: {
+    city: 'miami',
+    state: 'FL'
+  },
+  hobbies: ['sports', 'moovies'],
+  getBithday: function() {
+    return 2017 - this.age;
+  }
 };
-console.log(typeof adresse);
 
-const today = new Date();
+let val;
+val = person.adresse.city;
+val = person.hobbies[0];
+val = person.getBithday();
+
+console.log(val);
+
+const people = [
+  { name: 'zid', age: 16 },
+  { name: 'red', age: 19 },
+  { name: 'miki', age: 20 }
+];
+
+for (let i = 0; i < people.length; i++) {
+  console.log(people[i].name);
+}
+
+const journee = new Date();
+let today = journee;
+today = journee.getDay();
+today = journee.getMonth();
+today = journee.getDate();
 console.log(today);
-console.log(typeof today);
