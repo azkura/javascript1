@@ -11,15 +11,20 @@ const array = [
   'crawberry'
 ];
 
-for (let i = 0; i < array.length; i++) {
-  const arr = array[i];
-  if (arr === 'banana') {
-    console.log(`${arr}! this is my favorite!`);
-    continue;
-  }
-  if (arr === 'apple') {
-    console.log('break ...');
-    break;
-  }
-  console.log(arr);
+// array.forEach((arr, index) => {
+//   console.log(`${index} : ${arr}`);
+//   if (arr === 'banana') {
+//     console.table(`${arr}! this is my favorite!`);
+//   }
+// });
+
+const users = [
+  { id: 1, name: 'az' },
+  { id: 2, name: 'ziz' },
+  { id: 3, name: 'kou' },
+  { id: 4, name: 'ra' }
+];
+
+for (let x in users) {
+  console.log(`${x} : ${users[x].name}`);
 }
